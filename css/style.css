@@ -192,7 +192,7 @@ nav
 ==========================*/
 .banner-part
 {
-  background: url("/images/banner.png") no-repeat;
+  background: url("../images/banner.png") no-repeat;
   background-position: center;
   background-size: cover;
   padding-top: 270px;
@@ -655,15 +655,15 @@ nav
 }
 .video-part .box .item-1
 {
-  background: url("/images/cycle.png") no-repeat;
+  background: url("../images/cycle.png") no-repeat;
 }
 .video-part .box .item-2
 {
-  background: url("/images/skyote.png") no-repeat;
+  background: url("../images/skyote.png") no-repeat;
 }
 .video-part .box .item-3
 {
-  background: url("/images/man.png") no-repeat;
+  background: url("../images/man.png") no-repeat;
 }
 /*=========================
       Video Part End
