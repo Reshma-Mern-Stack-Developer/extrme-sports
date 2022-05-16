@@ -1,0 +1,698 @@
+  /* <!-- Google Fonts -->  
+  font-family: 'Arizonia', cursive;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Yellowtail', cursive;*/
+  @import url('https://fonts.googleapis.com/css2?family=Arizonia&family=IBM+Plex+Sans:wght@400;500;700&family=Yellowtail&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+}
+
+/*=========================
+      Common Css Start
+==========================*/
+body
+{
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+.container
+{
+  max-width: 1320px;
+  margin: 0 auto;
+}
+p ,ul li, a
+{
+  font-size: 18px;
+  font-weight: 400;
+}
+h2{
+  font-size: 54px;
+  font-weight: 700;
+}
+h3
+{
+  font-size: 30px;
+  font-weight: 700;
+}
+a
+{
+  text-decoration: none;
+}
+img
+{
+  max-width: 100%;
+}
+ul li 
+{
+  list-style: none;
+}
+.italan-heading
+{
+  font-family: 'Yellowtail', cursive;
+}
+h2.underline {
+    position: relative;
+}
+h2.underline::after
+{
+  content: "";
+  width: 80px;
+  height: 3px;
+  background-color: #ddd;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 30px;
+}
+/*=========================
+      Common Css End
+==========================*/
+/*=========================
+      Header Part Start
+==========================*/
+.header-part
+{
+  position: absolute;
+  width: 100%;
+  z-index: 99;
+  margin-top: 20px;
+}
+
+nav
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu ul li 
+{
+    display: inline-block;
+    padding: 0 25px;
+}
+.menu ul li:first-child 
+{
+  padding-left: 0;
+}
+.menu ul li:last-child 
+{
+  padding-right: 0;
+}
+.menu ul li a
+{
+  font-weight: 700;
+  color: #fff;
+}
+.button a 
+{
+  background: #FF9600;
+  padding: 20px 50px;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: background .4s;
+  -webkit-transition: background .4s;
+  -moz-transition: background .4s;
+  -ms-transition: background .4s;
+  -o-transition: background .4s;
+}
+/*=========================
+      Header Part End
+==========================*/
+/*=========================
+      Banner Part Start
+==========================*/
+.banner-part
+{
+  background: url("/images/banner.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 270px;
+  padding-bottom: 140px;
+  position: relative;
+}
+.banner 
+{
+  text-align: center;
+  max-width: 819px;
+  margin: 0 auto;
+}
+.banner h2 
+{
+  color: #fff;
+  margin-bottom: 55px;
+}
+.banner-part img 
+{
+  position: absolute;
+  bottom: 0;
+}
+.banner a 
+{
+    color: #fff;
+    padding: 20px 30px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin: 0 10px;
+    font-weight: 700;
+    background: #FF9600;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+}
+.banner a:hover,.button a:hover 
+{
+    background: #fff;
+    color: #222;
+}
+/*=========================
+      Banner Part End
+==========================*/
+/*=========================
+      Adventures Part Start
+==========================*/
+.adventures-part
+{
+  margin-top: 72px;
+}
+.new-advan 
+{
+    display: flex;
+    justify-content: space-between;
+}
+.adventures-part .text , .adventures-part .image
+{
+  width: 50%;
+}
+.adventures-part .image 
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.adventures-part .italan-heading
+{
+  color: #14B9F1;
+}
+.adventures-part .text h2::after
+{
+  content: "";
+  width: 80px;
+  height: 3px;
+  background-color: #ddd;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 30px;
+}
+.adventures-part .text h2
+{
+  margin-bottom: 60px;
+  position: relative;
+}
+.adventures-part .text p
+{
+  max-width: 590px;
+}
+.adventures-part .text ul li 
+{
+  margin-top: 30px;
+}
+.adventures-part .text ul li span 
+{
+    margin-right: 20px;
+    background: #ddd;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+}
+.adventures-part .text ul li span i
+{
+  font-size: 15px;
+}
+.adventures-part .text a 
+{
+  color: #fff;
+  padding: 20px 30px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  font-weight: 700;
+  background: #FF9600;
+  transition: all .4s;
+  -webkit-transition: all .4s;
+  -moz-transition: all .4s;
+  -ms-transition: all .4s;
+  -o-transition: all .4s;
+  margin-top: 30px;
+  display: inline-block;
+  border: 1px solid #FF9600;
+}
+.adventures-part .text a:hover 
+{
+  background: transparent ;
+  border: 1px solid #FF9600;
+  color: #222;
+}
+.adventures-part .image 
+{
+    margin: 0 -14px;
+}
+.adventures-part ul 
+{
+    margin-bottom: 40px;
+}
+/*=========================
+      Adventures Part End
+==========================*/
+/*=========================
+      Counter Part Start
+==========================*/
+.counter-part
+{
+  margin-top: 85px;
+}
+.counter-part .box
+{
+  display: flex;
+  justify-content: space-between;
+
+}
+.counter-part .box .item 
+{
+  text-align: center;
+  padding: 45px 0;
+  width: 312px;
+}
+.counter-part .box .item h2
+{
+  font-size: 80px;
+}
+.counter-part .box .item-1
+{
+  background: url("/images/counter-sec-bg.png") #FFF4E5  ;
+}
+.counter-part .box .item-2
+{
+  background: url("/images/counter-sec-bg.png") #E7FDE9 ;
+}
+.counter-part .box .item-3
+{
+  background: url("/images/counter-sec-bg.png") #F2F2FD ;
+}
+.counter-part .box .item-4
+{
+  background: url("/images/counter-sec-bg.png") #FDF1F5 ;
+}
+/*=========================
+      Counter Part End
+==========================*/
+/*=========================
+      Extreme Part Start
+==========================*/
+.extreme-part
+{
+  margin-top: 198px;
+  padding-top: 102px;
+  background: #0C3543;
+  padding-bottom: 120px;
+}
+.extreme-part .title
+{
+  display: flex;
+}
+.extreme-part .heading
+{
+  color: #fff;
+  width: 36%;
+}
+.extreme-part .heading .italan-heading
+{
+  color: #FF9600;
+}
+.extreme-part .text
+{
+  color: #fff;
+  width: 64%;
+}
+.extreme-part .text p
+{
+  max-width: 638px;
+  margin: 0 auto;
+  margin-top: 62px;
+}
+.extreme-part .boxs 
+{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 91px;
+}
+.extreme-part .boxs .item
+{
+  width: 32%;
+  margin-bottom: 30px;
+}
+.extreme-part .boxs .pic img
+{
+  width: 100%;
+  display: block;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.extreme-part .texts 
+{
+  background: #0F4152;
+  text-align: center;
+  padding-top: 27px;
+  color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.extreme-part .texts h3
+{
+  margin-bottom: 24px;
+}
+.extreme-part .texts p
+{
+  padding-bottom: 32px;
+}
+.extreme-part .big-heading
+{
+  background: url("/images/bg-sports-1.png") no-repeat center;
+  margin-top: 83px;
+}
+.extreme-part .big-heading h2
+{
+  font-size: 160px;
+  font-family:'Yellowtail', cursive; ;
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+}
+/*=========================
+      Extreme Part End
+==========================*/
+/*=========================
+      Boundaries Part End
+==========================*/
+.boundaries-part 
+{
+  position: relative;
+  background: #FF9600;
+  padding-top: 106px;
+  padding-bottom: 423px;
+}
+.boundaries-part  img.shape 
+{
+  position: absolute;
+  top: -65px;
+  left: 0;
+}
+.boundaries-part  .dtails 
+{
+  text-align: center;
+  color: #fff;
+}
+.boundaries-part .dtails img 
+{
+  margin-bottom: 26px;
+}
+.boundaries-part .dtails h3 
+{
+  margin-top: 46px;
+  margin-bottom: 60px;
+}
+.boundaries-part .dtails a 
+{
+  color: #fff;
+  padding: 20px 30px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  font-weight: 700;
+  background: #0C3543;
+  transition: all .4s;
+  -webkit-transition: all .4s;
+  -moz-transition: all .4s;
+  -ms-transition: all .4s;
+  -o-transition: all .4s;
+  margin: 0px 10px;
+  display: inline-block;
+  border: 1px solid #FF9600;
+  
+}
+.boundaries-part .dtails a:hover 
+{
+  border: 1px solid #fff;
+  background: transparent;
+}
+.boundaries-part .dtails a i
+{
+  margin-right: 10px;
+}
+/*=========================
+      Boundaries Part End
+==========================*/
+/*=========================
+      Video Part Start
+==========================*/
+.video-part 
+{
+  position: absolute;
+  width: 1320px;
+  top: 67%;
+}
+.video-part .box 
+{
+  display: flex;
+  justify-content: space-between;
+  
+}
+.video-part .box .item
+{
+  text-align: left;
+  width: 33%;
+  padding-top: 230px;
+  padding-bottom: 51px;
+  padding-left: 42px;
+  color: #fff;
+}
+.video-part .box h2
+{
+  font-size: 40px;
+}
+.video-part .box h3
+{
+  font-size: 28px;
+  margin-top: 17px;
+  margin-bottom: 64px;
+  position: relative;
+}
+.video-part .box h3:after {
+  content: "";
+  background: red;
+  width: 200px;
+  position: absolute;
+  height: 1px;
+  top: 100%;
+  margin-top: 32px;
+  left: 0;
+}
+.video-part .box .item i {
+    font-size: 16px;
+    background: #fff;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    color: #222;
+    text-align: center;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.video-part .box .item-1
+{
+  background: url("/images/cycle.png") no-repeat;
+}
+.video-part .box .item-2
+{
+  background: url("/images/skyote.png") no-repeat;
+}
+.video-part .box .item-3
+{
+  background: url("/images/man.png") no-repeat;
+}
+/*=========================
+      Video Part End
+==========================*/
+/*=========================
+      Choose Part Start
+==========================*/
+
+.choose_us 
+{
+  margin-top: 250px;
+  padding-bottom: 200px;
+}
+.choose_us .top 
+{
+  text-align: center;
+}
+.choose_us .top h2::after 
+{
+  background-color: #A0A0A0;
+  width: 123px;
+  left: 50%;
+  transform: translate(-50%, -4px);
+  -webkit-transform: translate(-50%, -4px);
+  -moz-transform: translate(-50%, -4px);
+  -ms-transform: translate(-50%, -4px);
+  -o-transform: translate(-50%, -4px);
+}
+.choose_us .box 
+{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+.choose_us .box .item
+{
+  width: 292px;
+  text-align: center;
+}
+.choose_us .box .item img 
+{
+  width: 100px;
+}
+.choose_us .box .item h3 
+{
+  font-size: 24px;
+  margin-top: 43px;
+  margin-bottom: 30px;
+}
+/*=========================
+      Choose Part End
+==========================*/
+/*=========================
+      Passion Part Start
+==========================*/
+.passion-part
+{
+  margin-top: 198px;
+  padding-top: 102px;
+  background: #F7F7F7;
+  padding-bottom: 120px;
+}
+.passion-part .title
+{
+  display: flex;
+}
+.passion-part .heading
+{
+  color: #222;
+  width: 36%;
+}
+.passion-part .heading .italan-heading
+{
+  color: #FF9600;
+}
+.passion-part .text
+{
+  color: #222;
+  width: 64%;
+}
+.passion-part .text p
+{
+  max-width: 638px;
+  margin: 0 auto;
+  margin-top: 62px;
+}
+.passion-part .boxs 
+{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 91px;
+}
+.passion-part .boxs .item
+{
+  width: 32%;
+  margin-bottom: 30px;
+}
+.passion-part .boxs .pic img
+{
+  width: 100%;
+  display: block;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.passion-part .texts 
+{
+  background: #fff;
+  text-align: center;
+  padding-top: 27px;
+  color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.passion-part .texts h3
+{
+  margin-bottom: 24px;
+  color: #222;
+}
+.passion-part .texts p
+{
+  padding-bottom: 32px;
+  color: #222;
+}
+.passion-part .read-article 
+{
+  border-top: 1px solid #222;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.passion-part .read-article a
+{
+  color: #FF9600;
+  font-weight: 700;
+}
+/*=========================
+      Passion Part End
+==========================*/
+/*=========================
+      Spoonser Part Start
+==========================*/
+.sponsor
+{
+  padding: 102px 0;
+}
+.sponsor .logos 
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/*=========================
+      Spoonser Part End
+==========================*/
