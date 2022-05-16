@@ -89,6 +89,7 @@ nav
 {
     display: inline-block;
     padding: 0 25px;
+    position: relative;
 }
 .menu ul li:first-child 
 {
@@ -102,6 +103,69 @@ nav
 {
   font-weight: 700;
   color: #fff;
+}
+.menu ul li i
+{
+  transform: rotate(0);
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  -ms-transform: rotate(0);
+  -o-transform: rotate(0);
+  transition: .4s;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  -ms-transition: .4s;
+  -o-transition: .4s;
+}
+.menu ul li:hover i
+{
+  transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+}
+/* Dropdown menu */
+.dropdown 
+{
+  position: absolute;
+  display: block;
+  background: #fff;
+  width: 153px;
+  transform: rotatex(90deg) translateX(-21px);
+  transition: transform .4s ;
+  -webkit-transition: transform .4s ;
+  -moz-transition: transform .4s ;
+  -ms-transition: transform .4s ;
+  -o-transition: transform .4s ;
+  -webkit-transform: rotatex(90deg) translateX(-21px);
+  -moz-transform: rotatex(90deg) translateX(-21px);
+  -ms-transform: rotatex(90deg) translateX(-21px);
+  -o-transform: rotatex(90deg) translateX(-21px);
+}
+.menu ul li:hover .dropdown
+{
+  transform: rotatex(0deg) translateX(-21px);
+  -webkit-transform: rotatex(0deg) translateX(-21px);
+  -moz-transform: rotatex(0deg) translateX(-21px);
+  -ms-transform: rotatex(0deg) translateX(-21px);
+  -o-transform: rotatex(0deg) translateX(-21px);
+}
+.dropdown ul li 
+{
+  padding: 0;
+  display: block;
+  padding: 10px 20px;
+  border-bottom: 1px solid;
+}
+.dropdown ul li:first-child
+{
+  padding-left: 20px;
+}
+.dropdown ul li a 
+{
+  color: #333;
+  display: block;
 }
 .button a 
 {
