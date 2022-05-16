@@ -336,10 +336,41 @@ nav
 .adventures-part .image 
 {
     margin: 0 -14px;
+    position: relative;
 }
 .adventures-part ul 
 {
     margin-bottom: 40px;
+}
+.adventures-part .bigImg
+{
+  animation: tintinatin 1s  infinite linear alternate;
+  -webkit-animation: tintinatin 1s  infinite linear alternate;
+  position: absolute;
+  left: 0;
+}
+.adventures-part .smallImg
+{
+  animation: tintinatin2 1s  infinite linear alternate;
+  -webkit-animation: tintinatin2 1s  infinite linear alternate;
+  position: absolute;
+  right: 0;
+}
+@keyframes tintinatin 
+{
+  from{
+    margin-top: -20px;
+  }to{
+    margin-top: 20px;
+  }
+}
+@keyframes tintinatin2 
+{
+  from{
+    margin-top: 20px;
+  }to{
+    margin-top: -20px;
+  }
 }
 /*=========================
       Adventures Part End
@@ -533,6 +564,36 @@ nav
 {
   margin-right: 10px;
 }
+.boundaries-part .item:before {
+    content: "";
+    background: #3333334a;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    z-index: 1;
+}
+.boundaries-part .item
+{
+  position: relative;
+}
+ .video-popup
+{
+  animation: imp .5s infinite linear alternate;
+  -webkit-animation: imp .5s infinite linear alternate;
+}
+@keyframes imp 
+{
+  from{
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+  }to{
+    background: #0C3543;
+    color: #fff;
+  }
+}
 /*=========================
       Boundaries Part End
 ==========================*/
@@ -645,6 +706,15 @@ nav
 .choose_us .box .item img 
 {
   width: 100px;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+
+}
+.choose_us .box .item img:hover {
+    transform: scale(1.5);
 }
 .choose_us .box .item h3 
 {
