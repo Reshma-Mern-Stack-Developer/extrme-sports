@@ -490,7 +490,7 @@ nav
 }
 .extreme-part .big-heading
 {
-  background: url("/images/bg-sports-1.png") no-repeat center;
+  background: url("../images/bg-sports-1.png") no-repeat center;
   margin-top: 83px;
 }
 .extreme-part .big-heading h2
