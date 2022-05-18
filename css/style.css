@@ -514,13 +514,13 @@ nav
   padding-top: 106px;
   padding-bottom: 423px;
 }
-.boundaries-part  img.shape 
+.boundaries-part img.shape 
 {
   position: absolute;
-  top: -65px;
+  top: -63px;
   left: 0;
 }
-.boundaries-part  .dtails 
+.boundaries-part .dtails 
 {
   text-align: center;
   color: #fff;
@@ -566,17 +566,23 @@ nav
 }
 .boundaries-part .item:before {
     content: "";
-    background: #3333334a;
+    background: rgb(51 51 51 / 51%);
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0%;
     left: 0;
     z-index: 1;
+    border-radius: 10px;
 }
 .boundaries-part .item
 {
   position: relative;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
  .video-popup
 {
@@ -615,15 +621,18 @@ nav
 .video-part .box .item
 {
   text-align: left;
-  width: 33%;
+  width: 32%;
   padding-top: 230px;
   padding-bottom: 51px;
-  padding-left: 42px;
   color: #fff;
+  position: relative;
 }
 .video-part .box h2
 {
   font-size: 40px;
+  padding-left: 42px;
+  position: relative;
+  z-index: 2;
 }
 .video-part .box h3
 {
@@ -631,16 +640,24 @@ nav
   margin-top: 17px;
   margin-bottom: 64px;
   position: relative;
+  padding-left: 42px;
+  z-index: 2;
 }
 .video-part .box h3:after {
   content: "";
-  background: red;
+  background: #ddd;
   width: 200px;
   position: absolute;
   height: 1px;
   top: 100%;
   margin-top: 32px;
-  left: 0;
+  left: 42px;
+}
+.video-part .box p
+{
+  padding-left: 42px;
+  position: relative;
+  z-index: 2;
 }
 .video-part .box .item i {
     font-size: 16px;
@@ -653,17 +670,24 @@ nav
     border-radius: 50%;
     margin-left: 10px;
 }
+
 .video-part .box .item-1
 {
   background: url("../images/cycle.png") no-repeat;
+  background-position: -3px 0px;
+  background-size: 102%;
 }
 .video-part .box .item-2
 {
   background: url("../images/skyote.png") no-repeat;
+  background-position: -3px 0px;
+  background-size: 102%;
 }
 .video-part .box .item-3
 {
   background: url("../images/man.png") no-repeat;
+  background-position: -3px 0px;
+  background-size: 102%;
 }
 /*=========================
       Video Part End
@@ -824,9 +848,120 @@ nav
     display: flex;
     justify-content: space-between;
 }
-
-
-
 /*=========================
       Spoonser Part End
+==========================*/
+/*=========================
+      Footer Part Start
+==========================*/
+.footer-content
+{
+  display: flex;
+}
+.footer-right
+{
+  position: relative;
+}
+footer .footer-left
+{
+  width: 45%;
+}
+footer .footer-left img
+{
+  width: 100%;
+  display: block;
+}
+footer .footer-right
+{
+  background: #0C3543;
+  width: 55%;
+}
+.our-details 
+{
+  max-width: 918px;
+  margin: 0 auto;
+}
+.our-details img 
+{
+  margin-top: 67px;
+  margin-bottom: 46px;
+}
+.btn-text , .contant-us
+{
+  display: flex;
+}
+.btn-text a
+{
+    /* width: 20%; */
+    color: #fff;
+    padding: 20px 30px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-weight: 700;
+    background: #FF9600;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+}
+.btn-text p
+{
+    max-width: 554px;
+    margin: 0 auto;
+    color: #fff;
+}
+.contant-us 
+{
+  position: relative;
+  margin-top: 60px;
+}
+.contant-us h3
+{
+  color: #fff;
+  position: relative;
+}
+.contant-us h3::after 
+{
+  color: #fff;
+  content: "";
+  width: 80px;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+.address 
+{
+    margin-left: 113px;
+    color: #fff;
+}
+.contant-us::after 
+{
+
+  content: "";
+  background: #fff;
+  width: 900px;
+  position: absolute;
+  height: 1px;
+  margin-bottom: 60px;
+}
+.contact, .address 
+{
+  margin-top: 60px;
+}
+.copy-right 
+{
+  max-width: 800px;
+  margin-bottom: 0;
+  position: absolute;
+  bottom: 20px;
+  color: #fff;
+}
+/*=========================
+      Footer Part End
 ==========================*/
