@@ -1,0 +1,92 @@
+.hide {
+  display: none;
+}
+/* Media Queries for different devices */
+
+/* Desktops and laptops */
+@media (max-width: 1280px) {
+  .logo img{
+    width: 80%;
+  }
+  .menu ul > li {
+    padding: 0 15px;
+  }
+}
+@media (min-width: 1024px) {
+  .banner h2 {
+    font-size: 36px;
+    margin-bottom: 45px;
+  }
+
+  .banner a {
+    font-size: 18px;
+    padding: 15px 25px;
+  }
+}
+@media (max-width: 1024px) {
+  .mobile_menu {
+    display: inline;
+  }
+  .main_menu {
+    /* display: none; */
+    position: absolute;
+    top: 59px;
+    background: #242121b0;
+    width: 30%;
+    height: 100vh;
+    padding: 20px;
+    right: -50%;
+    transition: 0.5s;
+  }
+  .button_desktop {
+    display: none;
+  }
+  .menu ul li {
+    display: block;
+    padding: 20px 0;
+  }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .banner h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+
+  .banner a {
+    font-size: 16px;
+    padding: 12px 22px;
+  }
+
+  .menu ul li a {
+    font-size: 16px;
+  }
+
+  .button a {
+    font-size: 16px;
+    padding: 15px 28px;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 767px) {
+  .banner h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .banner a {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+/* Mobile devices */
+@media (max-width: 375px) {
+  .banner a {
+    margin: 0;
+  }
+  nav .navbar .nav-links {
+    max-width: 100%;
+  }
+}

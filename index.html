@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Extreme sports</title>
-  <!-- Font Awosome icons -->
-  <script src="https://kit.fontawesome.com/b4f943ee80.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-  <!--  -->
-  <!--==================================
-              Navbar Part Start 
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Extreme sports</title>
+    <!-- Font Awosome icons -->
+    <script
+      src="https://kit.fontawesome.com/b4f943ee80.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
+  <body>
+    <!--  -->
+    <!--==================================
+              Navbar Part Start
     ====================================-->
     <header class="header-part">
       <div class="container">
         <nav>
           <div class="logo">
-            <img src="./images/logo.png" alt="">
+            <img src="./images/logo.png" alt="" />
           </div>
           <div class="menu">
-            <ul>
+            <ul class="main_menu">
               <li><a href="#">Home</a></li>
               <li><a href="#">About Us</a></li>
               <li>
-                <a href="#">Activities <i class="fa-solid fa-angle-down"></i></a>
+                <a href="#"
+                  >Activities <i class="fa-solid fa-angle-down"></i
+                ></a>
                 <div class="dropdown">
                   <ul>
                     <li><a href="#">Javascript</a></li>
@@ -38,18 +44,21 @@
               <li><a href="#">Latest News</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
+            <div class="mobile_menu">
+              <i class="fa-solid fa-bars"></i>
+            </div>
           </div>
-          <div class="button">
+          <div class="button button_desktop">
             <a href="#">Get Started <i class="fa-solid fa-angle-right"></i> </a>
           </div>
         </nav>
       </div>
     </header>
-  <!--==================================
-              Navbar Part End 
+    <!--==================================
+              Navbar Part End
     ====================================-->
-  <!--==================================
-              Banner Part End 
+    <!--==================================
+              Banner Part End
     ====================================-->
     <section class="banner-part">
       <div class="banner">
@@ -57,49 +66,64 @@
         <a class="btn-one" href="#">Explore Activities</a>
         <a class="btn-two" href="#">Who We Are</a>
       </div>
-      <img src="./images/separator.png" alt="">
+      <img src="./images/separator.png" alt="" />
     </section>
 
-  <!--==================================
-              Banner Part End 
+    <!--==================================
+              Banner Part End
     ====================================-->
-  <!--==================================
-              Adventures Part Start 
+    <!--==================================
+              Adventures Part Start
     ====================================-->
-    <section class="adventures-part">
+    <section class="adventures-part hide">
       <div class="container">
         <div class="new-advan">
           <div class="text">
             <h3 class="italan-heading">Feel The Excitement</h3>
             <h2 class="underline">Join Us And Embark On New Adventures</h2>
-            <p>Dolor sit amet consectetur adipiscing elits eiusmod tempor incididunts laboreyse dolore mag aliqua. Quis ipsum supendise ultrices gravid. Risus commodo viverra sed ipsum maecenas.</p>
+            <p>
+              Dolor sit amet consectetur adipiscing elits eiusmod tempor
+              incididunts laboreyse dolore mag aliqua. Quis ipsum supendise
+              ultrices gravid. Risus commodo viverra sed ipsum maecenas.
+            </p>
             <ul>
               <li>
-                <span><i class="fa-regular fa-circle-check"></i></span> Unde omnis iste natus error sit voluptatem dolore
+                <span><i class="fa-regular fa-circle-check"></i></span> Unde
+                omnis iste natus error sit voluptatem dolore
               </li>
               <li>
-                <span><i class="fa-regular fa-circle-check"></i></span> Unde omnis iste natus error sit voluptatem dolore
+                <span><i class="fa-regular fa-circle-check"></i></span> Unde
+                omnis iste natus error sit voluptatem dolore
               </li>
               <li>
-                <span><i class="fa-regular fa-circle-check"></i></span> Unde omnis iste natus error sit voluptatem dolore
+                <span><i class="fa-regular fa-circle-check"></i></span> Unde
+                omnis iste natus error sit voluptatem dolore
               </li>
             </ul>
             <a href="#">Discover More</a>
           </div>
           <div class="image">
-            <img class="bigImg" src="./images/about-extreme-sports-1.png" alt="">
-            <img class="smallImg" src="./images/about-extreme-sports-2.png" alt="">
+            <img
+              class="bigImg"
+              src="./images/about-extreme-sports-1.png"
+              alt=""
+            />
+            <img
+              class="smallImg"
+              src="./images/about-extreme-sports-2.png"
+              alt=""
+            />
           </div>
         </div>
       </div>
     </section>
-  <!--==================================
-              Adventures Part End 
+    <!--==================================
+              Adventures Part End
     ====================================-->
-  <!--==================================
-              Counter Part Start 
+    <!--==================================
+              Counter Part Start
     ====================================-->
-    <section class="counter-part">
+    <section class="counter-part hide">
       <div class="container">
         <div class="box">
           <div class="item item-1">
@@ -121,13 +145,13 @@
         </div>
       </div>
     </section>
-  <!--==================================
-              Counter Part End 
+    <!--==================================
+              Counter Part End
     ====================================-->
-  <!--==================================
-              Extreme Part Start 
+    <!--==================================
+              Extreme Part Start
     ====================================-->
-    <section class="extreme-part">
+    <section class="extreme-part hide">
       <div class="container">
         <div class="title">
           <div class="heading">
@@ -135,13 +159,17 @@
             <h2 class="underline">Extreme Sports Activities</h2>
           </div>
           <div class="text">
-            <p>Dolor sit amet consectetur adipiscing elit sed con eiusmod tempor incididunt labore etys dolore magna aliqua. Quis ipsum suspendisse ultrices gravida risus ipsum dolore commodo viverra maecenas.</p>
+            <p>
+              Dolor sit amet consectetur adipiscing elit sed con eiusmod tempor
+              incididunt labore etys dolore magna aliqua. Quis ipsum suspendisse
+              ultrices gravida risus ipsum dolore commodo viverra maecenas.
+            </p>
           </div>
         </div>
         <div class="boxs">
           <div class="item">
             <div class="pic">
-              <img src="./images/biking.png" alt="">
+              <img src="./images/biking.png" alt="" />
             </div>
             <div class="texts">
               <h3>Mountain Biking</h3>
@@ -150,7 +178,7 @@
           </div>
           <div class="item">
             <div class="pic">
-              <img src="./images/icing.png" alt="">
+              <img src="./images/icing.png" alt="" />
             </div>
             <div class="texts">
               <h3>Snow Sports</h3>
@@ -159,7 +187,7 @@
           </div>
           <div class="item">
             <div class="pic">
-              <img src="./images/water.png" alt="">
+              <img src="./images/water.png" alt="" />
             </div>
             <div class="texts">
               <h3>Suffring</h3>
@@ -168,7 +196,7 @@
           </div>
           <div class="item">
             <div class="pic">
-              <img src="./images/sky.png" alt="">
+              <img src="./images/sky.png" alt="" />
             </div>
             <div class="texts">
               <h3>Skateboarding</h3>
@@ -177,7 +205,7 @@
           </div>
           <div class="item">
             <div class="pic">
-              <img src="./images/bike.png" alt="">
+              <img src="./images/bike.png" alt="" />
             </div>
             <div class="texts">
               <h3>Jet Skiing</h3>
@@ -186,7 +214,7 @@
           </div>
           <div class="item">
             <div class="pic">
-              <img src="./images/climb.png" alt="">
+              <img src="./images/climb.png" alt="" />
             </div>
             <div class="texts">
               <h3>Ice Climbing</h3>
@@ -199,48 +227,59 @@
         <h2>Extreme Sports</h2>
       </div>
     </section>
-  <!--==================================
-              Extreme Part End 
+    <!--==================================
+              Extreme Part End
     ====================================-->
-  <!--==================================
-              Boundaries Part Start 
+    <!--==================================
+              Boundaries Part Start
     ====================================-->
-    <section class="boundaries-part">
-      <img class="shape" src="/images/sp.png" alt="">
+    <section class="boundaries-part hide">
+      <img class="shape" src="/images/sp.png" alt="" />
       <div class="container">
         <div class="dtails">
-          <img src="/images/logo-white.png" alt="">
-          <h2>Extreme Sports Will Test Your Limits And Push The Boundaries To The Max</h2>
+          <img src="/images/logo-white.png" alt="" />
+          <h2>
+            Extreme Sports Will Test Your Limits And Push The Boundaries To The
+            Max
+          </h2>
           <h3>Be Prepared To Experience The New Adventures</h3>
           <a href="#">Discover More</a>
-          <a class="video-popup" href="#"><i class="fa-solid fa-play"></i> View The Demo</a>
+          <a class="video-popup" href="#"
+            ><i class="fa-solid fa-play"></i> View The Demo</a
+          >
         </div>
         <div class="video-part">
-                  <div class="box">
-          <div class="item item-1">
-            <h2>Sports Videos</h2>
-            <h3>Get Inspired</h3>
-            <p>Dolor sit amet magna <i class="fa-solid fa-angle-right"></i></p>
+          <div class="box">
+            <div class="item item-1">
+              <h2>Sports Videos</h2>
+              <h3>Get Inspired</h3>
+              <p>
+                Dolor sit amet magna <i class="fa-solid fa-angle-right"></i>
+              </p>
+            </div>
+            <div class="item item-2">
+              <h2>Club Activities</h2>
+              <h3>View All Sports</h3>
+              <p>
+                Dolor sit amet magna <i class="fa-solid fa-angle-right"></i>
+              </p>
+            </div>
+            <div class="item item-3">
+              <h2>Meet Our Team</h2>
+              <h3>The Instructors</h3>
+              <p>
+                Dolor sit amet magna <i class="fa-solid fa-angle-right"></i>
+              </p>
+            </div>
           </div>
-          <div class="item item-2">
-            <h2>Club Activities</h2>
-            <h3>View All Sports</h3>
-            <p>Dolor sit amet magna <i class="fa-solid fa-angle-right"></i></p>
-          </div>
-          <div class="item item-3">
-            <h2>Meet Our Team</h2>
-            <h3>The Instructors</h3>
-            <p>Dolor sit amet magna <i class="fa-solid fa-angle-right"></i></p>
-          </div>
-        </div>
         </div>
       </div>
     </section>
-  <!--==================================
-              Boundaries Part End 
+    <!--==================================
+              Boundaries Part End
     ====================================-->
-  <!--==================================
-              Video Part Start 
+    <!--==================================
+              Video Part Start
     ====================================-->
     <!-- <section class="video-part">
       <div class="container">
@@ -263,13 +302,13 @@
         </div>
       </div>
     </section> -->
-  <!--==================================
-              Video Part End 
+    <!--==================================
+              Video Part End
     ====================================-->
-  <!--==================================
-              Choose us Part Start 
+    <!--==================================
+              Choose us Part Start
     ====================================-->
-    <section class="choose_us">
+    <section class="choose_us hide">
       <div class="container">
         <div class="top">
           <h3 class="italan-heading">Share The Excitement</h3>
@@ -277,35 +316,47 @@
         </div>
         <div class="box">
           <div class="item item-1">
-            <img src="/images/icon-1.png" alt="">
+            <img src="/images/icon-1.png" alt="" />
             <h3>A Team Of Passionate Individuals</h3>
-            <p>Dolor sit amet mag eliqua esimod ipsum dolore suspendise quis ultrices gravida risus.</p>
+            <p>
+              Dolor sit amet mag eliqua esimod ipsum dolore suspendise quis
+              ultrices gravida risus.
+            </p>
           </div>
           <div class="item item-2">
-            <img src="/images/icon-2.png" alt="">
+            <img src="/images/icon-2.png" alt="" />
             <h3>Learn To Train Your Body To Perform</h3>
-            <p>Dolor sit amet mag eliqua esimod ipsum dolore suspendise quis ultrices gravida risus.</p>
+            <p>
+              Dolor sit amet mag eliqua esimod ipsum dolore suspendise quis
+              ultrices gravida risus.
+            </p>
           </div>
           <div class="item item-3">
-            <img src="/images/icon-3.png" alt="">
+            <img src="/images/icon-3.png" alt="" />
             <h3>Overcome Your Fears And Master Your Skills</h3>
-            <p>Dolor sit amet mag eliqua esimod ipsum dolore suspendise quis ultrices gravida risus.</p>
+            <p>
+              Dolor sit amet mag eliqua esimod ipsum dolore suspendise quis
+              ultrices gravida risus.
+            </p>
           </div>
           <div class="item item-4">
-            <img src="/images/icon-4.png" alt="">
+            <img src="/images/icon-4.png" alt="" />
             <h3>Enjoy Extreme Activities Around The Globe</h3>
-            <p>Dolor sit amet mag eliqua esimod ipsum dolore suspendise quis ultrices gravida risus.</p>
+            <p>
+              Dolor sit amet mag eliqua esimod ipsum dolore suspendise quis
+              ultrices gravida risus.
+            </p>
           </div>
         </div>
       </div>
     </section>
-  <!--==================================
-              Choose us Part End 
+    <!--==================================
+              Choose us Part End
     ====================================-->
-  <!--==================================
-              Passion Part Start 
+    <!--==================================
+              Passion Part Start
     ====================================-->
-    <section class="passion-part">
+    <section class="passion-part hide">
       <div class="container">
         <div class="title">
           <div class="heading">
@@ -313,17 +364,24 @@
             <h2 class="underline">Extreme Sports Activities</h2>
           </div>
           <div class="text">
-            <p>Dolor sit amet consectetur adipiscing elit sed con eiusmod tempor incididunt labore etys dolore magna aliqua. Quis ipsum suspendisse ultrices gravida risus ipsum dolore commodo viverra maecenas.</p>
+            <p>
+              Dolor sit amet consectetur adipiscing elit sed con eiusmod tempor
+              incididunt labore etys dolore magna aliqua. Quis ipsum suspendisse
+              ultrices gravida risus ipsum dolore commodo viverra maecenas.
+            </p>
           </div>
         </div>
         <div class="boxs">
           <div class="item">
             <div class="pic">
-              <img src="./images/parachute.png" alt="">
+              <img src="./images/parachute.png" alt="" />
             </div>
             <div class="texts">
               <h3>Paragliding Adventures Across The World</h3>
-              <p>Integer amet miut ipsum molestie bibendum vitae sitat ligula fermentum tellus</p>
+              <p>
+                Integer amet miut ipsum molestie bibendum vitae sitat ligula
+                fermentum tellus
+              </p>
               <div class="read-article">
                 <a href="#">Read Article</a>
               </div>
@@ -331,23 +389,29 @@
           </div>
           <div class="item">
             <div class="pic">
-              <img src="./images/car.png" alt="">
+              <img src="./images/car.png" alt="" />
             </div>
             <div class="texts">
               <h3>All-Terrain Vehicle Excursions For The Family</h3>
-              <p>Integer amet miut ipsum molestie bibendum vitae sitat ligula fermentum tellus</p>
-                <div class="read-article">
+              <p>
+                Integer amet miut ipsum molestie bibendum vitae sitat ligula
+                fermentum tellus
+              </p>
+              <div class="read-article">
                 <a href="#">Read Article</a>
               </div>
             </div>
           </div>
           <div class="item">
             <div class="pic">
-              <img src="./images/yellow-syte.png" alt="">
+              <img src="./images/yellow-syte.png" alt="" />
             </div>
             <div class="texts">
               <h3>Best Skateboarding Big Air Skate Parks</h3>
-              <p>Integer amet miut ipsum molestie bibendum vitae sitat ligula fermentum tellus</p>
+              <p>
+                Integer amet miut ipsum molestie bibendum vitae sitat ligula
+                fermentum tellus
+              </p>
               <div class="read-article">
                 <a href="#">Read Article</a>
               </div>
@@ -356,60 +420,66 @@
         </div>
       </div>
     </section>
-  <!--==================================
-              Passion Part End 
+    <!--==================================
+              Passion Part End
     ====================================-->
-  <!--==================================
-              Sponsor Part End 
+    <!--==================================
+              Sponsor Part End
     ====================================-->
-    <section class="sponsor">
+    <section class="sponsor hide">
       <div class="container">
         <div class="logos">
-          <img src="/images/lg-1.png" alt="">
-          <img src="/images/lg-2.png" alt="">
-          <img src="/images/lg-3.png" alt="">
-          <img src="/images/lg-4.png" alt="">
-          <img src="/images/lg-5.png" alt="">
+          <img src="/images/lg-1.png" alt="" />
+          <img src="/images/lg-2.png" alt="" />
+          <img src="/images/lg-3.png" alt="" />
+          <img src="/images/lg-4.png" alt="" />
+          <img src="/images/lg-5.png" alt="" />
         </div>
       </div>
     </section>
-  <!--==================================
-              Sponsor Part End 
+    <!--==================================
+              Sponsor Part End
     ====================================-->
-      <!--==================================
-              Footer Part Start 
-    ====================================-->  
+    <!--==================================
+              Footer Part Start
+    ====================================-->
     <footer>
-      <div class="footer-content">
-      <div class="footer-left">
-        <img src="./images/footer.png" alt="">
-      </div>
-      <div class="footer-right">
-        <div class="our-details">
-          <img src="./images/logo.png" alt="" class="logo-ftr">
-          <div class="btn-text">
-            <a href="#">Join Our club</a>
-            <p>Dolor sit amet ipsum consectetur adipiscing elit sed eiusmod tempor incididunt ut labore dolore magna aliqua. Quis ipsum suspendisse ultrices ipsum sed dolor.</p>
-          </div>
-          <div class="contant-us">
-            <div class="contact">
-              <h3>Contact Us</h3>
+      <div class="footer-content hide">
+        <div class="footer-left">
+          <img src="./images/footer.png" alt="" />
+        </div>
+        <div class="footer-right">
+          <div class="our-details">
+            <img src="./images/logo.png" alt="" class="logo-ftr" />
+            <div class="btn-text">
+              <a href="#">Join Our club</a>
+              <p>
+                Dolor sit amet ipsum consectetur adipiscing elit sed eiusmod
+                tempor incididunt ut labore dolore magna aliqua. Quis ipsum
+                suspendisse ultrices ipsum sed dolor.
+              </p>
             </div>
-            <div class="address">
-              <p>586 Avada Avenue, Avadaville 30221 - USA</p>
-              <p>Email: ext-sports@my-domain.com</p>
-              <p>Phone: (555) 802-1234</p>
+            <div class="contant-us">
+              <div class="contact">
+                <h3>Contact Us</h3>
+              </div>
+              <div class="address">
+                <p>586 Avada Avenue, Avadaville 30221 - USA</p>
+                <p>Email: ext-sports@my-domain.com</p>
+                <p>Phone: (555) 802-1234</p>
+              </div>
             </div>
-          </div>
-          <div class="copy-right">
-            <p>© 2021 | Avada Theme by ThemeFusion | All Rights Reserved.</p>
+            <div class="copy-right">
+              <p>© 2021 | Avada Theme by ThemeFusion | All Rights Reserved.</p>
+            </div>
           </div>
         </div>
       </div>
-      </div>
     </footer>
     <!--==================================
-              Footer Part End 
+              Footer Part End
     ====================================-->
-</body>
+    <!-- Add this script to your HTML file -->
+    <script src="./js/script.js"></script>
+  </body>
 </html>
