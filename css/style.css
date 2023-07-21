@@ -27,7 +27,7 @@ a {
   font-weight: 400;
 }
 h2 {
-  font-size: 54px;
+  font-size: clamp(25px, 6vw, 54px);
   font-weight: 700;
 }
 h3 {
@@ -171,9 +171,9 @@ nav {
   font-size: clamp(25px, 5vw, 40px);
   display: none;
 }
- .dropdown  > ul  li a{
-    padding: 0 15px !important;
-  }
+.dropdown > ul li a {
+  padding: 0 15px !important;
+}
 /*=========================
       Header Part End
 ==========================*/
@@ -185,12 +185,12 @@ nav {
   background-position: center;
   background-size: cover;
   padding-top: clamp(150px, 14.5vw, 270px);
-  padding-bottom: clamp(70px, 15vw, 140px);
+  padding-bottom: clamp(70px, 15vw, 150px);
   position: relative;
 }
 .banner {
   text-align: center;
-  max-width: 819px;
+  max-width: clamp(600px, 30vw, 819px);
   margin: 0 auto;
 }
 .banner h2 {
